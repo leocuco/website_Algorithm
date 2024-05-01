@@ -29,8 +29,9 @@
     opacity: 0;
     font-size: 2.5vw !important;
     font-family: 'Ramabhadra', sans-serif !important;
-    background: linear-gradient(to left bottom, rgba(90, 74, 199, 1) 30%, rgba(173, 96, 223, 1) 60%) !important;
+    background: linear-gradient(to left bottom, rgb(56,182,255) 30%, rgb(56,182,255) 60%) !important;
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
   }
   
@@ -67,13 +68,14 @@
   .gradient{
     height: 100%;
     width: 100%;
-    background: linear-gradient(to left bottom, rgba(90, 74, 199, .8) 45vw, rgba(173, 96, 223, .8)45vw);
+    background: linear-gradient(to left bottom,rgb(56,182,255, .8)45vw, rgba(173, 96, 223, .8)45vw);
     position: relative;
   }
   
   .comp{
     position: absolute;
     text-align: center;
+    color:  rgb(56,182,255);
     width: 100%;
     font-size: 4vw;
     top: 40vh;
@@ -227,7 +229,7 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
     border: 10px solid transparent;
-    border-image: linear-gradient(to bottom, rgba(90, 74, 199, .8), rgba(173, 96, 223, .8));
+    border-image: linear-gradient(to bottom, #38B6FF), rgba(173, 96, 223, .8));
     border-image-slice: 1;
     transform: translateY(20px);
     opacity: 0;
@@ -241,7 +243,7 @@
   
   .tab:hover{
     opacity: 0.5;
-    border-image: linear-gradient(to top, rgba(90, 74, 199, .8), rgba(173, 96, 223, .8));
+    border-image: linear-gradient(to top, #38B6FF, rgba(173, 96, 223, .8));
     border-image-slice: 1;
   }
   
@@ -258,7 +260,7 @@
   
   @keyframes gradien {
     0%{
-      background-color: rgba(90, 74, 199, .8);
+      background-color: #38B6FF;
     }
   
     25%{
@@ -266,7 +268,7 @@
     }
   
     50%{
-      background-color: rgba(90, 74, 199, .8);
+      background-color:#38B6FF;
     }
   
     75%{
@@ -274,7 +276,7 @@
     }
   
     100%{
-      background-color: rgba(90, 74, 199, .8);
+      background-color: #38B6FF;
     }
   }
   
@@ -313,7 +315,7 @@
     width: 30%;
     float: left;
     padding: 57px 0;
-    background: linear-gradient(to right top, rgba(90, 74, 199, .8), rgba(173, 96, 223, .8));
+    background: linear-gradient(to right top, #38B6FF, rgba(173, 96, 223, .8));
   }
   
   .user > i{
@@ -338,7 +340,7 @@
   
   .grad-text > h1{
     font-family: 'Ramabhadra', sans-serif !important;
-    background: linear-gradient(to right bottom, rgba(90, 74, 199, 1) 35%, rgba(173, 96, 223, 1) 55%) !important;
+    background: linear-gradient(to right bottom,  rgb(56,182,255) 35%,  rgb(56,182,255) 55%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     padding: 2px 4px;
@@ -355,7 +357,7 @@
   
   .modal-header{
     border-bottom: 5px solid transparent !important;
-    border-image: linear-gradient(to right, rgba(90, 74, 199, .8), rgba(173, 96, 223, .8));
+    border-image: linear-gradient(to right, #38B6FF, rgba(173, 96, 223, .8));
     border-image-slice: 1;
   }
   
