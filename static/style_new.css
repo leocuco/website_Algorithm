@@ -589,24 +589,19 @@ section {
 }
 
 .services-slider {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    overflow-x: auto;
+    overflow-x: unset;
     padding: 1rem 0;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: none;
 }
 
 .service-slide {
-    flex: 0 0 300px;
-    padding: 2rem 1.2rem;
-    background: var(--section-bg);
-    border-radius: 16px;
-    text-align: center;
-    scroll-snap-align: start;
-    box-shadow: 0 4px 24px rgba(25,118,210,0.10);
-    transition: transform 0.35s cubic-bezier(.21,1.02,.73,1), box-shadow 0.35s;
-    margin-bottom: 1.2rem;
-    position: relative;
+    flex: unset;
+    min-width: 0;
+    max-width: 100%;
+    margin-bottom: 0;
 }
 
 .service-slide:hover {
