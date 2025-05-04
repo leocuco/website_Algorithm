@@ -279,7 +279,7 @@ window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
-// Estatísticas animadas na seção Quem Somos
+// Estatísticas animadas na seção Quem Somos (sempre que a seção entrar na tela)
 function animateCounter(element, end, duration = 1800) {
     let start = 0;
     const increment = end / (duration / 16);
@@ -295,15 +295,23 @@ function animateCounter(element, end, duration = 1800) {
     update();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const statNumbers = document.querySelectorAll('.stat-number');
-    statNumbers.forEach(stat => {
-        const end = parseInt(stat.textContent);
-        if (!isNaN(end)) {
-            animateCounter(stat, end);
-        }
-    });
-});
+const aboutStats = document.querySelector('.about-stats');
+const statNumbers = aboutStats ? aboutStats.querySelectorAll('.stat-number') : [];
+
+if (aboutStats && statNumbers.length) {
+    let lastValues = Array.from(statNumbers).map(stat => parseInt(stat.textContent));
+    const observer = new window.IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                statNumbers.forEach((stat, i) => {
+                    stat.textContent = '0+';
+                    animateCounter(stat, lastValues[i]);
+                });
+            }
+        });
+    }, { threshold: 0.5 });
+    observer.observe(aboutStats);
+}
 
 // Carrossel de depoimentos
 const testimonials = document.querySelectorAll('.testimonial');
