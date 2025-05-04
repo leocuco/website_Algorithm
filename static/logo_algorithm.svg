@@ -1,0 +1,10 @@
+<svg width="420" height="110" viewBox="0 0 420 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .main { font: 700 48px 'Inter', Arial, sans-serif; fill: #9CA3AF; letter-spacing: 2px; }
+    .slash { stroke: #1976d2; stroke-width: 6; }
+    .slogan { font: 600 18px 'Inter', Arial, sans-serif; fill: #1976d2; letter-spacing: 3px; }
+  </style>
+  <line x1="30" y1="30" x2="70" y2="80" class="slash" />
+  <text x="80" y="75" class="main">ALGORITHM</text>
+  <text x="120" y="100" class="slogan">/*CODE FOR YOU*/</text>
+</svg> 
