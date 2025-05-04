@@ -423,7 +423,7 @@ section {
 
 /* About Section */
 .about {
-    background: var(--section-bg);
+    background: #181c24 !important;
 }
 
 .about-content {
@@ -461,7 +461,7 @@ section {
 
 /* Vision Section */
 .vision {
-    background: white;
+    background: #232a36 !important;
 }
 
 .vision-grid {
@@ -491,7 +491,7 @@ section {
 
 /* Products Section */
 .products {
-    background: var(--section-bg);
+    background: #1a2233 !important;
 }
 
 .products-grid {
@@ -585,7 +585,7 @@ section {
 
 /* Services Section */
 .services {
-    background: white;
+    background: #222831 !important;
 }
 
 .services-slider {
@@ -630,7 +630,7 @@ section {
 
 /* Contact Section */
 .contact {
-    background: var(--section-bg);
+    background: #232a36 !important;
 }
 
 .contact-content {
@@ -692,7 +692,7 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--primary-color);
+    background: #181c24 !important;
     color: #fff;
     padding: 4rem 0 2rem;
 }
@@ -1004,7 +1004,7 @@ section {
 }
 
 .testimonials {
-    background: #fff;
+    background: #181c24 !important;
     padding: 4rem 0 3rem 0;
 }
 .testimonials-carousel {
@@ -1089,7 +1089,7 @@ section {
 }
 
 .institutional-video {
-    background: #f3f4f6;
+    background: #202040 !important;
     padding: 3.5rem 0 3rem 0;
     border-bottom: 1px solid #e5e7eb;
 }
