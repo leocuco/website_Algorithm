@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <rect width="1600" height="600" fill="#ffffff"/>
+  <rect width="1600" height="600" fill="#e6f1fb" opacity="0.4"/>
+
+  <!-- direct connecting line: no intermediaries -->
+  <line x1="430" y1="300" x2="1170" y2="300" stroke="#184f95" stroke-width="4" stroke-dasharray="2 14" stroke-linecap="round"/>
+  <circle cx="800" cy="300" r="7" fill="#185fa5"/>
+
+  <!-- left: person avatar + speech bubble -->
+  <g transform="translate(330,300)">
+    <circle r="70" fill="#f1efe8"/>
+    <circle cy="-14" r="26" fill="#184f95"/>
+    <path d="M -40 60 Q -40 6 0 6 Q 40 6 40 60 Z" fill="#184f95"/>
+  </g>
+  <g transform="translate(390,150)">
+    <path d="M0 0 h150 a16 16 0 0 1 16 16 v50 a16 16 0 0 1 -16 16 h-110 l-26 22 v-22 h-14 a16 16 0 0 1 -16 -16 v-50 a16 16 0 0 1 16 -16 z" fill="#ffffff" stroke="#e6f1fb" stroke-width="3"/>
+    <rect x="20" y="24" width="100" height="10" rx="5" fill="#184f95" opacity="0.65"/>
+    <rect x="20" y="44" width="70" height="10" rx="5" fill="#8a8985"/>
+  </g>
+
+  <!-- right: phone / direct reply -->
+  <g transform="translate(1220,300)">
+    <circle r="70" fill="#f1efe8"/>
+    <rect x="-30" y="-52" width="60" height="104" rx="12" fill="#0b0b0b"/>
+    <rect x="-24" y="-42" width="48" height="80" rx="4" fill="#ffffff"/>
+    <rect x="-14" y="-28" width="28" height="6" rx="3" fill="#184f95" opacity="0.7"/>
+    <rect x="-14" y="-14" width="20" height="6" rx="3" fill="#8a8985"/>
+    <circle cy="38" r="5" fill="#5f5e5a" opacity="0.6"/>
+  </g>
+  <g transform="translate(1050,150)">
+    <path d="M0 0 h150 a16 16 0 0 1 16 16 v50 a16 16 0 0 1 -16 16 h-14 v22 l-26 -22 h-110 a16 16 0 0 1 -16 -16 v-50 a16 16 0 0 1 16 -16 z" fill="#ffffff" stroke="#e6f1fb" stroke-width="3"/>
+    <rect x="20" y="24" width="100" height="10" rx="5" fill="#185fa5" opacity="0.7"/>
+    <rect x="20" y="44" width="60" height="10" rx="5" fill="#8a8985"/>
+  </g>
+
+  <!-- WhatsApp-style accent dot on phone bubble -->
+  <circle cx="1256" cy="248" r="10" fill="#185fa5"/>
+
+  <!-- decorative dots -->
+  <g fill="#8a8985" opacity="0.3">
+    <circle cx="800" cy="120" r="4"/>
+    <circle cx="800" cy="470" r="4"/>
+    <circle cx="700" cy="420" r="3"/>
+    <circle cx="900" cy="420" r="3"/>
+  </g>
+</svg>

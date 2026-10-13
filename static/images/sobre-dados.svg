@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgSobre" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6f1fb"/>
+      <stop offset="1" stop-color="#f1efe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#bgSobre)"/>
+
+  <!-- desk -->
+  <rect x="480" y="430" width="640" height="18" rx="9" fill="#0b0b0b" opacity="0.14"/>
+  <rect x="500" y="410" width="600" height="24" rx="8" fill="#ffffff"/>
+
+  <!-- person, sitting behind laptop -->
+  <g transform="translate(1000,150)">
+    <circle cx="0" cy="0" r="58" fill="#184f95"/>
+    <path d="M -90 220 Q -90 90 0 90 Q 90 90 90 220 Z" fill="#184f95"/>
+    <path d="M -90 220 Q -90 90 0 90 Q 90 90 90 220 Z" fill="#185fa5" opacity="0.35"/>
+  </g>
+
+  <!-- coffee cup -->
+  <g transform="translate(520,360)">
+    <rect width="46" height="52" rx="8" fill="#ffffff" stroke="#8a8985" stroke-width="3"/>
+    <path d="M 46 14 q 20 0 20 20 q 0 20 -20 20" fill="none" stroke="#8a8985" stroke-width="3"/>
+    <rect x="6" y="6" width="34" height="10" rx="5" fill="#5f5e5a" opacity="0.5"/>
+  </g>
+
+  <!-- laptop -->
+  <g transform="translate(660,270)">
+    <path d="M 0 160 L 40 190 L 400 190 L 360 160 Z" fill="#5f5e5a" opacity="0.25"/>
+    <rect x="0" y="0" width="360" height="160" rx="10" fill="#0b0b0b"/>
+    <rect x="10" y="10" width="340" height="140" rx="4" fill="#ffffff"/>
+
+    <!-- mini dashboard on screen -->
+    <rect x="26" y="24" width="120" height="14" rx="6" fill="#0b0b0b" opacity="0.7"/>
+    <rect x="26" y="52" width="90" height="50" rx="8" fill="#e6f1fb"/>
+    <rect x="128" y="52" width="90" height="50" rx="8" fill="#f1efe8"/>
+    <rect x="230" y="52" width="104" height="50" rx="8" fill="#e6f1fb"/>
+    <polyline points="26,132 80,110 140,124 200,96 260,118 334,90" fill="none" stroke="#185fa5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- speech / rapport bubble, human touch -->
+  <g transform="translate(1180,340)">
+    <path d="M0 0 h150 a16 16 0 0 1 16 16 v56 a16 16 0 0 1 -16 16 h-90 l-30 26 v-26 h-30 a16 16 0 0 1 -16 -16 v-56 a16 16 0 0 1 16 -16 z" fill="#ffffff" stroke="#e6f1fb" stroke-width="3"/>
+    <rect x="20" y="24" width="90" height="10" rx="5" fill="#184f95" opacity="0.6"/>
+    <rect x="20" y="44" width="60" height="10" rx="5" fill="#8a8985"/>
+  </g>
+
+  <!-- decorative dots -->
+  <g fill="#8a8985" opacity="0.35">
+    <circle cx="300" cy="140" r="4"/>
+    <circle cx="360" cy="220" r="3.5"/>
+    <circle cx="250" cy="260" r="3"/>
+  </g>
+</svg>

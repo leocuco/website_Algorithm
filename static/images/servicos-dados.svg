@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgServicos" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1efe8"/>
+      <stop offset="1" stop-color="#e8e4d8"/>
+    </linearGradient>
+    <radialGradient id="decisaoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#184f95" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#184f95" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cylBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f3a70"/>
+      <stop offset="1" stop-color="#184f95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#bgServicos)"/>
+
+  <!-- converging lines: each source -> the Decisão point -->
+  <path d="M 200 120 C 650 120, 900 260, 1310 300" fill="none" stroke="#123a66" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 200 300 L 1310 300" fill="none" stroke="#184f95" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 200 480 C 650 480, 900 340, 1310 300" fill="none" stroke="#93a9c9" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- source 1: Dados (database cylinder) -->
+  <g transform="translate(150,75)">
+    <ellipse cx="35" cy="12" rx="35" ry="12" fill="#14396b"/>
+    <rect x="0" y="12" width="70" height="46" fill="url(#cylBody)"/>
+    <ellipse cx="35" cy="58" rx="35" ry="12" fill="#123a66"/>
+    <ellipse cx="35" cy="12" rx="35" ry="12" fill="none" stroke="#0b2c54" stroke-width="1.5"/>
+    <text x="35" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#0b0b0b">Dados</text>
+  </g>
+
+  <!-- source 2: Organização (table icon) -->
+  <g transform="translate(150,275)">
+    <rect x="0" y="0" width="72" height="12" rx="4" fill="#184f95"/>
+    <rect x="0" y="24" width="72" height="34" rx="4" fill="none" stroke="#184f95" stroke-width="5"/>
+    <line x1="24" y1="24" x2="24" y2="58" stroke="#184f95" stroke-width="5"/>
+    <line x1="48" y1="24" x2="48" y2="58" stroke="#184f95" stroke-width="5"/>
+    <text x="35" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#0b0b0b">Organização</text>
+  </g>
+
+  <!-- source 3: Software sob medida (monitor + chart) -->
+  <g transform="translate(148,455)">
+    <rect x="0" y="0" width="74" height="52" rx="8" fill="none" stroke="#93a9c9" stroke-width="5"/>
+    <polyline points="12,36 28,22 42,30 62,12" fill="none" stroke="#93a9c9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="37" y1="52" x2="37" y2="64" stroke="#93a9c9" stroke-width="5"/>
+    <line x1="20" y1="64" x2="54" y2="64" stroke="#93a9c9" stroke-width="5" stroke-linecap="round"/>
+    <text x="37" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#0b0b0b">Software sob</text>
+    <text x="37" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#0b0b0b">medida</text>
+  </g>
+
+  <!-- convergence point: Decisão target -->
+  <g transform="translate(1350,300)">
+    <circle r="80" fill="url(#decisaoGlow)"/>
+    <circle r="46" fill="#184f95"/>
+    <circle r="46" fill="none" stroke="#e6f1fb" stroke-width="2" opacity="0.5"/>
+    <line x1="-30" y1="0" x2="-14" y2="0" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="14" y1="0" x2="30" y2="0" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="-30" x2="0" y2="-14" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="14" x2="0" y2="30" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <circle r="9" fill="#ffffff"/>
+    <text x="0" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" fill="#184f95">Decisão</text>
+  </g>
+</svg>

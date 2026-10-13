@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgHero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6f1fb"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#185fa5"/>
+      <stop offset="1" stop-color="#184f95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#bgHero)"/>
+
+  <!-- faint data-network texture, left side -->
+  <g opacity="0.35" stroke="#184f95" stroke-width="1.5">
+    <line x1="90" y1="120" x2="220" y2="200"/>
+    <line x1="220" y1="200" x2="160" y2="320"/>
+    <line x1="220" y1="200" x2="340" y2="260"/>
+    <line x1="160" y1="320" x2="300" y2="400"/>
+    <line x1="340" y1="260" x2="300" y2="400"/>
+  </g>
+  <g fill="#184f95" opacity="0.55">
+    <circle cx="90" cy="120" r="5"/>
+    <circle cx="220" cy="200" r="6.5"/>
+    <circle cx="160" cy="320" r="5"/>
+    <circle cx="340" cy="260" r="5.5"/>
+    <circle cx="300" cy="400" r="6"/>
+  </g>
+  <g fill="#8a8985" opacity="0.4">
+    <circle cx="120" cy="460" r="3.5"/>
+    <circle cx="420" cy="120" r="3.5"/>
+    <circle cx="470" cy="470" r="3"/>
+  </g>
+
+  <!-- screen mockup -->
+  <g transform="translate(620,90)">
+    <rect x="-10" y="-10" width="580" height="410" rx="22" fill="#0b0b0b" opacity="0.06"/>
+    <rect width="560" height="390" rx="18" fill="#ffffff" stroke="#e6f1fb" stroke-width="2"/>
+
+    <!-- browser chrome -->
+    <rect width="560" height="46" rx="18" fill="#f1efe8"/>
+    <rect y="28" width="560" height="18" fill="#f1efe8"/>
+    <circle cx="28" cy="23" r="6" fill="#8a8985" opacity="0.5"/>
+    <circle cx="50" cy="23" r="6" fill="#8a8985" opacity="0.5"/>
+    <circle cx="72" cy="23" r="6" fill="#8a8985" opacity="0.5"/>
+
+    <!-- dashboard title -->
+    <rect x="32" y="72" width="150" height="14" rx="7" fill="#0b0b0b" opacity="0.75"/>
+    <rect x="32" y="94" width="90" height="10" rx="5" fill="#8a8985"/>
+
+    <!-- KPI mini cards -->
+    <g>
+      <rect x="32" y="122" width="150" height="70" rx="12" fill="#e6f1fb"/>
+      <rect x="48" y="140" width="60" height="10" rx="5" fill="#185fa5" opacity="0.7"/>
+      <rect x="48" y="158" width="90" height="16" rx="5" fill="#184f95"/>
+    </g>
+    <g>
+      <rect x="196" y="122" width="150" height="70" rx="12" fill="#f1efe8"/>
+      <rect x="212" y="140" width="60" height="10" rx="5" fill="#5f5e5a" opacity="0.7"/>
+      <rect x="212" y="158" width="70" height="16" rx="5" fill="#0b0b0b" opacity="0.8"/>
+    </g>
+    <g>
+      <rect x="360" y="122" width="168" height="70" rx="12" fill="#e6f1fb"/>
+      <rect x="376" y="140" width="60" height="10" rx="5" fill="#185fa5" opacity="0.7"/>
+      <rect x="376" y="158" width="80" height="16" rx="5" fill="#184f95"/>
+    </g>
+
+    <!-- bar chart -->
+    <g transform="translate(32,220)">
+      <rect x="0"   y="90" width="46" height="60"  rx="6" fill="url(#barGrad)" opacity="0.55"/>
+      <rect x="64"  y="60" width="46" height="90"  rx="6" fill="url(#barGrad)" opacity="0.7"/>
+      <rect x="128" y="30" width="46" height="120" rx="6" fill="url(#barGrad)"/>
+      <rect x="192" y="70" width="46" height="80"  rx="6" fill="url(#barGrad)" opacity="0.7"/>
+      <rect x="256" y="10" width="46" height="140" rx="6" fill="url(#barGrad)"/>
+      <!-- sparkline overlay -->
+      <polyline points="23,70 87,45 151,20 215,55 279,5" fill="none" stroke="#185fa5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#185fa5">
+        <circle cx="23" cy="70" r="4"/>
+        <circle cx="87" cy="45" r="4"/>
+        <circle cx="151" cy="20" r="4"/>
+        <circle cx="215" cy="55" r="4"/>
+        <circle cx="279" cy="5" r="4"/>
+      </g>
+      <line x1="0" y1="150" x2="360" y2="150" stroke="#f1efe8" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
